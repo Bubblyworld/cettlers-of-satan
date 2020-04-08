@@ -2,7 +2,7 @@ import React from 'react'
 import {Hexagon} from 'react-hexgrid';
 
 const Tile = (props) => {
-    return <Hexagon 
+    return <Hexagon
       q={props.x}
       r={props.y}
       s={0}
