@@ -1,0 +1,24 @@
+{
+  "name": "cettlers-of-satan",
+  "version": "0.0.0",
+  "description": "Shared client/server code for Cettlers of Satan, a dodgy remake of a popular board game.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bubblyworld/cettlers-of-satan.git"
+  },
+  "keywords": [
+    "cettlers",
+    "satan",
+    "state"
+  ],
+  "author": "Guy Paterson-Jones and Cary Small",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Bubblyworld/cettlers-of-satan/issues"
+  },
+  "homepage": "https://github.com/Bubblyworld/cettlers-of-satan#readme"
+}
