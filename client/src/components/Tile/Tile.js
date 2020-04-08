@@ -1,0 +1,13 @@
+import React from 'react'
+import {Hexagon} from 'react-hexgrid';
+
+const Tile = (props) => {
+    return <Hexagon 
+      q={props.x}
+      r={props.y}
+      s={0}
+  />
+  };
+  
+  export default Tile;
+  
