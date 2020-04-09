@@ -13,6 +13,9 @@ import Tile, { TileCoordinates } from "../Tile/Tile";
 import { boardWidth, boardHeight } from "./Styles";
 import BoardView from "./BoardView";
 
+import map from "cettlers-of-satan";
+import { Grid } from "cettlers-of-satan/grid";
+
 const getBoardState = () => {
   return [
     { x: -2, y: 0 },
@@ -62,8 +65,9 @@ const mapToBuildingCoordinates = (tiles) => {
 class Board extends React.Component {
   constructor(props) {
     super(props);
+    const grid = new Grid(3);
     this.state = {
-      board: getBoardState(),
+      tiles: grid.tiles,
       building: getBuildingStates(),
     };
   }
@@ -88,11 +92,11 @@ class Board extends React.Component {
             spacing={1.1}
             origin={{ x: 0, y: 0 }}
           >
-            {this.state.board.map((tileStatus) => (
+            {this.state.tiles.map((tile) => (
               <Tile
-                className={tileStatus.x+''+tileStatus.y}
-                x={tileStatus.x}
-                y={tileStatus.y}
+                className={tile.hex.x+''+tile.hex.y}
+                x={-1*(tile.hex.x)}
+                y={tile.hex.y }
                 click={this.clickHandler}
               />
             ))}
