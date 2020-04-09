@@ -6,8 +6,10 @@ const Tile = (props) => {
       q={props.x}
       r={props.y}
       s={0}
+      onClick={(e,i) => props.click(e,i)}
+      fill={"pat-1"}
   />
   };
-  
+
   export default Tile;
   
