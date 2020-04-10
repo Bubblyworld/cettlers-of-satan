@@ -5,7 +5,7 @@ const Tile = (props) => {
     return <Hexagon
       q={props.x}
       r={props.y}
-      s={0}
+      s={4}
       onClick={(e,i) => props.click(e,i)}
   />
   };
